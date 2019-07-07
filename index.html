@@ -8,6 +8,25 @@ h1 { color: #FFFFFF; font-family: "Great Vibes", cursive; font-size: 85px; line-
 h4 { color: #FFFFF; font-family: 'Julius Sans One', sans-serif; font-size: 22px; font-weight: bold; line-height: 32px; margin: 0 0 24px; text-shadow: 1px 1px 1px #082b34; }
 
 	body  { color: #FFFFFF; background-color: #4db8ff; font: Serif; font-size: 24px; }
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}	
+	
+	
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -16,12 +35,12 @@ h4 { color: #FFFFF; font-family: 'Julius Sans One', sans-serif; font-size: 22px;
   color: #FFFFFF;
   text-align: center;
   font-size: 16px;
-  padding: 20px 2px;
-  width: 200px;
+  padding: 20px 1px;
+  width: 165px;
   max-height: 60px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 2px;
 }
 
 .button span {
@@ -55,19 +74,23 @@ h4 { color: #FFFFF; font-family: 'Julius Sans One', sans-serif; font-size: 22px;
 
 <h1>Welcome to my first website</h1>
 <h4>Please check the integrated test button<h4>
+<div class="row">
+  <div class="column">
+	<textarea id="myTextarea" rows="11" cols="100" style="font-size: 18px;" style="width:100%;"></textarea>
+	<h4>Click any button</h4>
 
-<textarea id="myTextarea" rows="11" cols="100" style="font-size: 18px;"></textarea>
-
-<h4>Click any button</h4>
-
-<button class="button" onclick="helloWorld()"><span>Hello</span></button>
-<button class="button" onclick="helloAngie()"><span>Angie</span></button>
-<button class="button" onclick="sumAll()" ><span>Add Numbers (" ")</span></button>
-<button class="button" onclick="multyAll()"><span>Multiply Numbers (" ")</span></button>
+<button class="button" style="width: 80px;" onclick="helloWorld()"><span>Hello</span></button>
+<button class="button" style="width: 80px;" onclick="helloAngie()"><span>Angie</span></button>
+<button class="button" style="width: 200px;" onclick="sumAll()" ><span>Add Numbers (" ")</span></button>
+<button class="button" style="width: 200px;" onclick="multyAll()"><span>Multiply Numbers (" ")</span></button>
 <button class="button" onclick="test()" style="background-color: orange;"><span>Function Test*</span></button>
-<br /></br />
+<br />
 <button class="button" onclick="integratedTest()" style="background-color: red;"><span>Integrated Test</span></button>
-
+  </div>
+  <div class="column">
+	<img src="picture for my site.png" alt="Testers choice IMG" style="width: 50%; float: right; padding: 1px 150px 5px 5px;" >
+  </div>
+</div>
 <p style="color: yellow;"><i>*These are functions examples:
 </br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;alert('hi there!');
 </br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;document.write('message');
