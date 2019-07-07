@@ -82,8 +82,7 @@ for (var row = 0; row<mat.length; row++) {
 		mat[row][col] = (row+1)*(col+1);
 	}
 }
-document.write("<div id='hiddenTable' style='display:none'>");
-document.write("<table border='1'>");
+document.write("<table id='hiddenTable' style='display:none' border='1'>");
 for (var row = 0; row<mat.length; row++) {
 	document.write('<tr>');
 	for (var col = 0; col<mat[row].length; col++) {
@@ -92,8 +91,6 @@ for (var row = 0; row<mat.length; row++) {
 	document.write('</tr>');
 }
 document.write('</table>');
-document.write("</div>");
-
 
 var testStr ="function helloWorldTemp() {\ndocument.getElementById(\"myTextarea\").value =\"Hello World Temp!\";\n}\nhelloWorldTemp();\nsetTimeout(\"helloWorld();\",800);\nsetTimeout(\"helloAngie();\",1600);\nsetTimeout(\"document.getElementById('myTextarea').value = '2 2 2'\",2400);\nsetTimeout(\"sumAll();\",3000);\nsetTimeout(\"document.getElementById('myTextarea').value = '2 2 2'\",3800);\nsetTimeout(\"multyAll();\",4400);\nsetTimeout(\"document.getElementById('myTextarea').value = 'All function worked!'\",5200);"
 
