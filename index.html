@@ -1,103 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>My First webSite</title>
-	     <meta charset="UTF-8">
-	     <link rel="shortcut icon" type="image/png" href="icon.png">
-	     <style type = "text/css" >
-	     h1 { color: #FFFFFF; font-family: "Great Vibes", cursive; font-size: 85px; line-height: 100px; font-weight: normal; margin-bottom: 0px; margin-top: 40px; text-align: center; text-shadow: 0 1px 1px #fff; }
-	     h4 { color: #FFFFF; font-family: 'Julius Sans One', sans-serif; font-size: 22px; font-weight: bold; line-height: 32px; margin: 0 0 24px; text-shadow: 1px 1px 1px #082b34; }
-	     body  { color: #FFFFFF; background-color: #4db8ff; font: Serif; font-size: 24px; }
+	<head>
+	<title>My First webSite</title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" type="image/png" href="icon.png">
+		<style type = "text/css" >
+			h1 { color: #FFFFFF; font-family: "Great Vibes", cursive; font-size: 85px; line-height: 100px; font-weight: normal; margin-bottom: 0px; margin-top: 40px; text-align: center; text-shadow: 0 1px 1px #fff; }
+			h4 { color: #FFFFF; font-family: 'Julius Sans One', sans-serif; font-size: 22px; font-weight: bold; line-height: 32px; margin: 0 0 24px; text-shadow: 1px 1px 1px #082b34; }
+			body  { color: #FFFFFF; background-color: #4db8ff; font: Serif; font-size: 24px; }
 
-	     * {
-	       box-sizing: border-box;
-	     }
+			* {
+				box-sizing: border-box;
+			}
 
-	     .column {
-	       float: left;
-	       width: 50%;
-	       padding: 5px;
-	     }
+			.column {
+				float: left;
+				width: 50%;
+				padding: 5px;
+			}
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}	
-	
-	
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: purple;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 16px;
-  padding: 20px 1px;
-  width: 165px;
-  max-height: 60px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 2px;
-}
+			/* Clearfix (clear floats) */
+			.row::after {
+				content: "";
+				clear: both;
+				display: table;
+			}	
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+			.button {
+				display: inline-block;
+				border-radius: 4px;
+				background-color: purple;
+				border: none;
+				color: #FFFFFF;
+				text-align: center;
+				font-size: 16px;
+				padding: 20px 1px;
+				width: 165px;
+				max-height: 60px;
+				transition: all 0.5s;
+				cursor: pointer;
+				margin: 2px;
+			}
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
+			.button span {
+				cursor: pointer;
+				display: inline-block;
+				position: relative;
+				transition: 0.5s;
+			}
 
-.button:hover span {
-  padding-right: 30px;
-}
+			.button span:after {
+				content: '\00bb';
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				right: -20px;
+				transition: 0.5s;
+			}
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+			.button:hover span {
+				padding-right: 30px;
+			}
 
-</style>
-</head>
-<body>
-
-<h1>Welcome to my first website</h1>
-<h4>Please check the integrated test button<h4>
-<div class="row">
-  <div class="column">
-	<textarea id="myTextarea" rows="11" cols="100" style="font-size: 18px;" style="width:100%;"></textarea>
-	<h4>Click any button</h4>
-
-<button class="button" style="width: 80px;" onclick="helloWorld()"><span>Hello</span></button>
-<button class="button" style="width: 80px;" onclick="helloAngie()"><span>Angie</span></button>
-<button class="button" style="width: 200px;" onclick="sumAll()" ><span>Add Numbers (" ")</span></button>
-<button class="button" style="width: 200px;" onclick="multyAll()"><span>Multiply Numbers (" ")</span></button>
-<button class="button" onclick="test()" style="background-color: orange;"><span>Function Test*</span></button>
-<br />
-<button class="button" onclick="integratedTest()" style="background-color: red;"><span>Integrated Test</span></button>
-  </div>
-  <div class="column">
+			.button:hover span:after {
+				opacity: 1;
+				right: 0;
+			}
+		</style>
+	</head>
+	<body>
+	<h1>Welcome to my first website</h1>
+	<h4>Please check the integrated test button<h4>
+	<div class="row">
+		<div class="column">
+			<textarea id="myTextarea" rows="11" cols="100" style="font-size: 18px;" style="width:100%;"></textarea>
+			<h4>Click any button</h4>
+			<button class="button" style="width: 80px;" onclick="helloWorld()"><span>Hello</span></button>
+			<button class="button" style="width: 80px;" onclick="helloAngie()"><span>Angie</span></button>
+			<button class="button" style="width: 200px;" onclick="sumAll()" ><span>Add Numbers (" ")</span></button>
+			<button class="button" style="width: 200px;" onclick="multyAll()"><span>Multiply Numbers (" ")</span></button>
+			<button class="button" onclick="test()" style="background-color: orange;"><span>Function Test*</span></button>
+			<br />
+			<button class="button" onclick="integratedTest()" style="background-color: red;"><span>Integrated Test</span></button>
+ 		</div>
+ 	<div class="column">
 	<img src="picture for my site.png" alt="Testers choice IMG" style="width: 50%; float: right; padding: 1px 150px 5px 5px;" >
-  </div>
-</div>
-<p style="color: yellow;"><i>*These are examples of functions:
-</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;alert('hi there!');
-</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;document.write('message');
-</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;document.getElementById("hiddenTable").style='display:block'; ('display:none'/'background-color:Violet')</i></p>
-
+	</div>
+		</div>
+		<p style="color: yellow;"><i>*These are examples of functions:
+		</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;alert('hi there!');
+		</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;document.write('message');
+		</br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;document.getElementById("hiddenTable").style='display:block'; ('display:none'/'background-color:Violet')</i></p>
 <script>
-
 var mat = new Array(10);
 for (var row = 0; row<mat.length; row++) {
 	mat[row] = new Array(10);
@@ -150,8 +144,6 @@ var userFunction = document.getElementById("myTextarea").value;
 var test = new Function("return function (){ " + userFunction + " };")();
 test();
 }
-
 </script>
-
 </body>
 </html>
